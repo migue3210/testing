@@ -2,9 +2,31 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+function Navbar() {
+  const items = [
+    { title: "about", link: "" },
+    { title: "content1", link: "" },
+    { title: "content2", link: "" },
+    { title: "content3", link: "" },
+  ]
+  const styles = {
+    display: "flex",
+    flexDirection: "row",
+    listStyleType: "none",
+  }
+  return (
+    items.map(item =>
+      <ul style={styles}>
+        <li><a href={item.link}>{item.title}</a></li>
+      </ul>
+    )
+
+  )
+}
+
 function App() {
   return (
-    <div className="App">
+    <><Navbar></Navbar><div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,7 +41,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div></>
   );
 }
 
