@@ -25,11 +25,13 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin: 27px 0px;
 }
 
 .forgot {
+    display: flex;
     width: 100%;
-    text-align: end;
+    justify-content: flex-end;
     color: #FF7A00;
     font-family: "Red Hat Display";
     font-size: 14px;
@@ -109,7 +111,7 @@ hr {
     height: 0px;
     opacity: 0.15;
     border: 1px solid;
-    margin: 25px;
+    margin: 25px 0px;
 }
 
 .banner {

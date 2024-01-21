@@ -18,7 +18,7 @@
 }
 
 .title {
-    width: 400px;
+    width: 100%;
     text-align: left;
     font-family: "Red Hat Display";
     font-size: 27px;
@@ -43,7 +43,7 @@
 
 button {
     display: flex;
-    width: 400px;
+    width: 100%;
     height: 40px;
     padding: 10px;
     border: none;
