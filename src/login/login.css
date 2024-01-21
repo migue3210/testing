@@ -1,0 +1,49 @@
+.Login {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.login-form {
+    flex-basis: 50%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 400px;
+    text-align: left;
+    font-family: "Red Hat Display";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 27px;
+}
+
+.forgot {
+    width: 400px;
+    text-align: end;
+    color: #FF7A00;
+    font-family: "Red Hat Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.25px;
+    margin: 21px 0px;
+}
+
+.banner {
+    flex-basis: 50%;
+}
+
+.saman-image {
+    object-fit: cover;
+    width: 50vw;
+    height: 100vh;
+    display: block;
+}
