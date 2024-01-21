@@ -4,13 +4,17 @@
     height: 100vh;
 }
 
-.register-form {
+.container {
     flex-basis: 50%;
-    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.register-form {
+    width: 400px;
+
 }
 
 .title {
@@ -21,7 +25,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin: 27px;
 }
 
 .forgot {
@@ -72,4 +75,14 @@ button.send {
     width: 50vw;
     height: 100vh;
     display: block;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-basis: 100%;
+    }
+
+    div.banner {
+        display: none;
+    }
 }
