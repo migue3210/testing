@@ -86,3 +86,17 @@ button.send {
         display: none;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .container {
+        flex-basis: 100%;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+
+    div.banner {
+        display: none;
+    }
+}
