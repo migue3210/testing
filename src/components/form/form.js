@@ -1,5 +1,6 @@
 import React from 'react'
 import './form.css'
+
 const CustomInput = ({ ...props }) => {
 
     return (

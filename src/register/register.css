@@ -1,0 +1,75 @@
+.Register {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.register-form {
+    flex-basis: 50%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 400px;
+    text-align: left;
+    font-family: "Red Hat Display";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 27px;
+}
+
+.forgot {
+    width: 400px;
+    text-align: end;
+    color: #FF7A00;
+    font-family: "Red Hat Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0.25px;
+    margin: 21px 0px;
+}
+
+
+button {
+    display: flex;
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    margin: 26px 0px;
+}
+
+button.send {
+    justify-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: #FD8204;
+    color: #F4F2EF;
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.25px;
+}
+
+.banner {
+    flex-basis: 50%;
+}
+
+.university-image {
+    object-fit: cover;
+    width: 50vw;
+    height: 100vh;
+    display: block;
+}

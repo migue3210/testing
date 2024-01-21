@@ -1,5 +1,8 @@
 import React from "react";
 import './login.css'
+import {
+    Link
+} from "react-router-dom";
 import CustomInput from '../components/form/form'
 import email_icon from '../assets/email.svg';
 import lock_icon from '../assets/lock.svg';
@@ -18,7 +21,7 @@ export default function Login() {
                 <button type="button" class="send">Login</button>
                 <hr></hr>
                 <button type="button" class="google"><img src={google_icon} className="icon" alt="icon" /><p>Acceder con Google</p></button>
-                <p className="register">¿No estás registrado? <a href="">Crear Cuenta</a></p>
+                <p className="register">¿No estás registrado? <Link to="/register">Crear Cuenta</Link></p>
             </div>
             <div className="banner">
                 <img src={saman} alt="saman" className="saman-image" />
@@ -27,3 +30,4 @@ export default function Login() {
 
     )
 }
+
