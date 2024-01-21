@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 25px;
+    padding: 25px;
 }
 
 .login-form {
@@ -141,7 +141,11 @@ hr {
     }
 
     .login-form {
-        width: 100%;
+        width: 260px !important;
+    }
+
+    .forgot {
+        width: 260px !important;
     }
 
     div.banner {

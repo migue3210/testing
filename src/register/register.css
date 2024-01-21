@@ -87,13 +87,27 @@ button.send {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-basis: 100%;
+    }
+
+    div.banner {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .container {
         flex-basis: 100%;
     }
 
-    .login-form {
-        width: 100%;
+    .register-form {
+        width: 260px !important;
+    }
+
+    .forgot {
+        width: 260px !important;
     }
 
     div.banner {
