@@ -103,11 +103,7 @@ button.send {
     }
 
     .register-form {
-        width: 260px !important;
-    }
-
-    .forgot {
-        width: 260px !important;
+        width: 100% !important;
     }
 
     div.banner {
