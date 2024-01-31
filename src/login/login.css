@@ -57,7 +57,8 @@
     color: #FF7A00;
 }
 
-button {
+
+button.send {
     display: flex;
     width: 100%;
     height: 40px;
@@ -66,9 +67,6 @@ button {
     border-radius: 20px;
     align-items: center;
 
-}
-
-button.send {
     justify-content: center;
     gap: 10px;
     flex-shrink: 0;
@@ -83,6 +81,14 @@ button.send {
 }
 
 button.google {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+
     color: #3C4043;
     text-align: center;
     font-family: Roboto;

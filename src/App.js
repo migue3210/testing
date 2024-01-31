@@ -5,6 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import './App.css';
+import Landing from './landing/landing.js';
 import Login from './login/login.js'
 import Register from "./register/register.js"
 
@@ -16,6 +17,11 @@ function App() {
           <Route
             exact
             path="/"
+            element={<Landing />}
+          ></Route>
+          <Route
+            exact
+            path="/login"
             element={<Login />}
           ></Route>
           <Route
