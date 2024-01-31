@@ -1,3 +1,7 @@
+.hero {
+    height: 100vh;
+}
+
 .heroImage {
     position: absolute;
     z-index: -1;
@@ -16,7 +20,7 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.hero-container {
+.caption-container {
     height: 70vh;
     position: relative;
     display: flex;
@@ -36,4 +40,8 @@ h1.hero-text {
     font-weight: 900;
     line-height: normal;
     letter-spacing: -1.44px;
+}
+
+.content {
+    min-height: 100vh;
 }
