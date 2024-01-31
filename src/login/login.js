@@ -1,8 +1,6 @@
 import React from "react";
 import './login.css'
-import {
-    Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 import CustomInput from '../components/form/form'
 import email_icon from '../assets/email.svg';
 import lock_icon from '../assets/lock.svg';

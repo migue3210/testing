@@ -40,7 +40,6 @@
     margin: 21px 0px;
 }
 
-
 button.send {
     display: flex;
     width: 100%;
@@ -49,6 +48,7 @@ button.send {
     border: none;
     border-radius: 20px;
     align-items: center;
+    margin: 26px 0px;
 
     justify-content: center;
     gap: 10px;
@@ -61,6 +61,7 @@ button.send {
     font-weight: 700;
     line-height: 17px;
     letter-spacing: 0.25px;
+
 }
 
 .banner {
