@@ -14,8 +14,8 @@ export default function Login() {
             <div className="container">
                 <div className="login-form">
                     <h2 className="title">Inicio de Sesión</h2>
-                    <CustomInput label={"Email"} preffixIcon={<img src={email_icon} className="icon" alt="icon" />} type={'email'} placeholder={"mail@correo.unimet.edu.ve"}></CustomInput>
-                    <CustomInput label={"Contraseña"} preffixIcon={<img src={lock_icon} className="icon" alt="icon" />} suffixIcon={<img src={eye_icon} className="icon" alt="icon" />} type={'password'} placeholder={"123"}></CustomInput>
+                    <CustomInput label={"Email"} preffixIcon={<img src={email_icon} className="icon" alt="icon" />} type={"email"} placeholder={"mail@correo.unimet.edu.ve"}></CustomInput>
+                    <CustomInput id="passwordInput" label={"Contraseña"} preffixIcon={<img src={lock_icon} className="icon" alt="icon" />} suffixIcon={<img src={eye_icon} className="icon" alt="icon" id='suffixIcon' />} onClick={passwordVisibility} type={"password"} placeholder={"123"}></CustomInput>
                     <a href="" className="forgot">Olvidé mi contraseña</a>
                     <button type="button" class="send">Login</button>
                     <hr></hr>
@@ -29,5 +29,14 @@ export default function Login() {
         </div>
 
     )
+}
+
+function passwordVisibility() {
+    var x = document.getElementById("passwordInput");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
 }
 

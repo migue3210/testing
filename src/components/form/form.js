@@ -19,7 +19,8 @@ const CustomInput = ({ ...props }) => {
                     }
 
                     <input
-                        type={Text}
+                        id={props.id}
+                        type={props.type}
                         placeholder={props.placeholder}
                         value={props.value}
                         onChange={props.onChange}
@@ -27,7 +28,7 @@ const CustomInput = ({ ...props }) => {
                     />
 
                     {props.suffixIcon &&
-                        <div className="input_icon">
+                        <div onClick={props.onClick} className="input_icon">
                             {props.suffixIcon}
                         </div>
                     }
