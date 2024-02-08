@@ -1,18 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './landing.css'
 import Header from './header/header.js'
-import HeroImage from '../assets/rescate.jpeg'
+import HeroImage1 from '../assets/rescate.jpeg'
+import HeroImage2 from '../assets/musicum.jpg'
+import HeroImage3 from '../assets/tigers.jpg'
+import HeroImage4 from '../assets/aiesec.jpg'
 import metromun from '../assets/metromun.jpg'
 import formula from '../assets/formula.jpg'
 import cavum from '../assets/cavum.jpg'
 
 
+const imageArray = [HeroImage1, HeroImage2, HeroImage3, HeroImage4];
+
 export default function Landing() {
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        const timerId = setInterval(() => {
+            setCount((count) => count + 1);
+        }, 4000);
+
+        return () => clearInterval(timerId);
+    }, []);
+
+    const image = imageArray[count % imageArray.length];
+
     return (
         <div className="Landing">
             <section className="hero">
                 <div className="filter">
-                    <img src={HeroImage} alt="university" className="heroImage" />
+                    <img src={image} alt="university" className="heroImage" />
                 </div>
                 <Header></Header>
                 <div className="caption-container">
@@ -50,4 +67,3 @@ export default function Landing() {
 
     )
 }
-
