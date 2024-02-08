@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const items = [
     { title: "¿Quiénes somos?", link: "#about" },
-    { title: "Agrupaciones", link: "" },
+    { title: "Agrupaciones", link: "#groups" },
 ]
 export default function Header() {
     return (
