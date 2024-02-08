@@ -43,5 +43,58 @@ h1.hero-text {
 }
 
 .content {
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about {
+    width: 1120px;
+}
+
+.subTitle {
+    color: #000;
+    text-align: center;
+    font-family: "Red Hat Display";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: start;
+    margin: 0;
+    padding: 0;
+}
+
+
+.sectionImage {
+    width: 550px;
+    height: 400px;
+    flex-shrink: 0;
+    object-fit: cover;
+
+}
+
+.mision,
+.vision,
+.objective {
+    display: flex;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+p.about-description {
+    margin: 0;
+}
+
+.mision>.about-text {
+    margin-right: 20px;
+}
+
+.objective>.about-text {
+    margin-right: 20px;
+}
+
+.vision>.about-text {
+    margin-left: 20px;
 }

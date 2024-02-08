@@ -4,9 +4,8 @@ import logo from '../../assets/unimetLogo.png'
 import { Link } from "react-router-dom";
 
 const items = [
-    { title: "¿Quiénes somos?", link: "" },
-    { title: "Misión", link: "" },
-    { title: "Visión", link: "" },
+    { title: "¿Quiénes somos?", link: "#about" },
+    { title: "Agrupaciones", link: "" },
 ]
 export default function Header() {
     return (
